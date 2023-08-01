@@ -14,7 +14,11 @@
   <body>
     <form action="" target="_blank">
       <h1>Forms</h1>
+      <label for="gsearch">Search Box:</label>
+      <input type="search" id="gsearch" name="gsearch">
       <hr />
+
+
       <label for="fname">First name:</label><br />
       <input
         type="text"
@@ -28,13 +32,53 @@
         id="lname"
         name="lname"
         placeholder="Enter Last Name"
-      /><br />
+      /><br /><br>
+        
+      <input type="submit" value="Submit">
       <input type="reset" value="Reset" />
       <hr />
+
+
+
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br><br>
+      <input type="submit" value="Submit">
+      <hr />
+
+
+
+
       <p><strong>Select Gender</strong></p>
       <label for="male"> <input type="radio" id="male" />Male <br /></label>
       <label for="female"><input type="radio" id="female" />Female</label>
       <hr />
+
+
+
+      <label for="phone">Enter Your phone number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+      <input type="submit" value="submit"><br><hr>
+
+
+
+      <label for="bir">Birthday:</label><br>
+      <input type="date" id="bir" name="bir"><br><hr>
+
+
+      <strong>LANGUAGE</strong><br>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="python" name="fav_language" value="Python">
+      <label for="python">Python</label><br>
+      <input type="radio" id="c" name="fav_language" value="C">
+      <label for="c">C</label>
+      <hr>
+
+
+
+
       <label for="hobbies" selected=""
         ><strong>Choose your Hobbies:</strong></label
       ><br />
@@ -44,21 +88,72 @@
         <option value="hobbies3">Cycling</option>
       </select>
       <hr />
+
+
+
+
+
       <label for="message">Additional work:</label><br />
-      <textarea name="message" id="" cols="30" rows="5"></textarea>
+      <textarea name="message" id="" cols="30" rows="6"></textarea>
       <hr />
+
+
+
       <button type="button" onclick="alert('Hello world!')">Click Me!</button>
       <hr />
+
+
       <fieldset>
         <legend>Result</legend>
         <label for="sem1">Sem1: <input type="text" id="sem1" /></label><br />
-        <label for="sem2">Sem2: <input type="text" id="sem2" /></label><br><br>
-        <input type="submit" value="submit">
-      </fieldset><hr>
+        <label for="sem2">Sem2: <input type="text" id="sem2" /></label
+        ><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+      <hr />
+
+
+
+
+      <label for="countries">Select Your Country:</label><br />
+      <input list="countries" name="countries" placeholder="Country Name" />
       <datalist id="countries">
         <option value="India">India</option>
         <option value="Pakistan">Pakistan</option>
+        <option value="Srilanka">Srilanka</option>
       </datalist>
+      <hr />
+
+
+
+      <label for="time">Set The Time</label>
+      <input type="time" id="time" value="time"><br><hr>
+
+
+
+      <label for="quantity">Quantity(Between 1 and 10)</label><br>
+      <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+      <input type="submit" value="submit"><hr>
+
+
+      
+
+
+
+      <label for="vol">Volume(between 0 to 50)</label><br>
+      <input type="range" id="vol" name="vol" min="0" max="50"><br><hr>
+
+
+
+      <label for="email">Enter your E-mail:</label><br>
+      <input type="email" id="email" name="email" placeholder="email address"><hr>
+
+
+
+      <input type="image" src="https://i0.wp.com/www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif?fit=450%2C250&ssl=1" alt="Submit" width="100" height="100"><hr>
+
+
+
       <p>
         <input type="checkbox" />Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Voluptates, sed!
